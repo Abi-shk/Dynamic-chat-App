@@ -20,7 +20,7 @@
                     <% if (users.length > 0) { %>
                         <% for (let i = 0; i < users.length; i++) { %>
                             <li class="list-group-item user-list" data-user-id="<%= users[i]._id %>">
-                                <img src="<%= 'http://localhost:3000/' + users[i].image %>" alt="<%= users[i].name %>" width="50" class="rounded-circle" height="50">
+                                <img src="<%= 'https://dynamic-chat-app-2.onrender.com/' + users[i].image %>" alt="<%= users[i].name %>" width="50" class="rounded-circle" height="50">
                                 <%= users[i].name %>
                                 <% if(users[i].is_online) { %>
                                     <sup class="online-status" id="<%= users[i]._id %>-status">Online</sup>
